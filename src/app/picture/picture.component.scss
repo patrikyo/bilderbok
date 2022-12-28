@@ -1,0 +1,72 @@
+
+.picture-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+img {
+    overflow: hidden;
+    border: 2px inset;
+    height: 100%;
+    width: 100%;
+
+}
+
+.picture {
+    width: 49%;
+    box-sizing: border-box;
+}
+
+
+@media screen and (max-width:576px){
+    .picture-container {
+        justify-content: center;
+        gap: 20px;
+
+    }
+    .picture {
+        width: 90%;
+    }
+
+    img{
+        max-height: 250px;
+    }
+}
+
+@media screen and (min-width: 576px){
+    .picture {
+        width:48%;
+    }
+
+    img{
+        max-height: 250px;
+        max-width: 350px;
+    }
+
+}
+
+// ipad
+@media screen and (min-width: 768px){
+    img{
+        max-height: 350px;
+        max-width: 450px;
+    }
+}
+
+
+@media screen and (min-width: 992px){
+    .picture-container {
+        margin: 0 auto;
+        max-width: 70%;
+    }
+    .picture {
+        width: 32%;
+    }
+
+    img{
+        max-width: 550px;
+        max-height: 450px;
+    }
+
+}
