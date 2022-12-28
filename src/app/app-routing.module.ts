@@ -13,6 +13,10 @@ const routes: Routes = [
     pathMatch: 'full',
     component: PictureComponent,
   },
+  {
+    path: '**',
+    component: PictureComponent,
+  },
 ];
 
 @NgModule({
