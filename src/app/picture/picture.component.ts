@@ -12,10 +12,22 @@ export class PictureComponent implements OnInit {
 
   public speak(word: string) {
     const audioPlayer: HTMLAudioElement = document.querySelector(
-      '#audio'
+      `#${word}`
     ) as HTMLAudioElement;
     switch (word) {
       case 'gunga':
+        audioPlayer.play();
+        break;
+      case 'skog':
+        audioPlayer.play();
+        break;
+      case 'vatten':
+        audioPlayer.play();
+        break;
+      case 'lekplats':
+        audioPlayer.play();
+        break;
+      case 'buss':
         audioPlayer.play();
     }
   }
