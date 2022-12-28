@@ -14,9 +14,15 @@ img {
 }
 
 img:hover {
-    scale: 1.1;
+    animation-name: scaleup;
+    animation-duration: 2s;
 
 }
+
+@keyframes scaleup {
+    from {scale: 1;}
+    to {scale: 1.1;}
+  }
 
 .picture {
     width: 49%;
