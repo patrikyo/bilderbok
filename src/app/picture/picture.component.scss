@@ -3,6 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
+    justify-content: center;
 }
 
 img {
@@ -14,16 +15,15 @@ img {
 
 img:hover {
     border: 2px solid #f1f1f14b;
-    border-radius: 5px;
     animation-name: scaleup;
-    animation-duration: 2s;
+    animation-duration: 3s;
 
 }
 
 
 @keyframes scaleup {
-    from {scale: 1;}
-    to {scale: 1.030;}
+    from {scale: 1; border-radius: 5px;}
+    to {scale: 1.080; border-radius: 25px;}
   }
 
 .picture {
@@ -34,7 +34,6 @@ img:hover {
 
 @media screen and (max-width:576px){
     .picture-container {
-        justify-content: center;
         gap: 20px;
 
     }
