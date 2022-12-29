@@ -29,6 +29,9 @@ export class PictureComponent implements OnInit {
         break;
       case 'buss':
         audioPlayer.play();
+        break;
+      case 'bil':
+        audioPlayer.play();
     }
   }
 }

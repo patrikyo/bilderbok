@@ -7,21 +7,23 @@
 
 img {
     overflow: hidden;
-    border: 2px inset;
     height: 100%;
     width: 100%;
 
 }
 
 img:hover {
+    border: 2px solid #f1f1f14b;
+    border-radius: 5px;
     animation-name: scaleup;
     animation-duration: 2s;
 
 }
 
+
 @keyframes scaleup {
     from {scale: 1;}
-    to {scale: 1.1;}
+    to {scale: 1.030;}
   }
 
 .picture {
