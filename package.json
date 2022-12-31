@@ -5,7 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:ghp": "npm version minor && ng build --output-path docs --base-href /bilderbok/",
+    "build:patch:ghp": "npm version patch && ng build --output-path docs --base-href /bilderbok/",
+    "build:minor:ghp": "npm version minor && ng build --output-path docs --base-href /bilderbok/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
