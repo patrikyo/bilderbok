@@ -1,58 +1,59 @@
-<div class="picture-container">
-  <div class="picture">
-    <img
-      src="assets/pictures/gunga.jpg"
-      alt="gunga"
-      (click)="speak('gunga')"
-      [ngClass]="{ 'focused-img': focusedElement === 'gunga' }"
-    />
-    <audio id="gunga" src="assets/voices/gunga.m4a"></audio>
-  </div>
+<div>
+  <ul class="picture-container">
+    <li class="picture">
+      <img
+        src="assets/pictures/gunga.jpg"
+        alt="gunga"
+        (click)="speak('gunga')"
+        [ngClass]="{ 'focused-img': focusedElement === 'gunga' }"
+      />
+      <audio id="gunga" src="assets/voices/gunga.m4a"></audio>
+    </li>
 
-  <div class="picture">
-    <img
-      src="assets/pictures/skog.jpg"
-      alt="skog"
-      (click)="speak('skog')"
-      [ngClass]="{ 'focused-img': focusedElement === 'skog' }"
-    />
-    <audio id="skog" src="assets/voices/skog.m4a"></audio>
-  </div>
-
-  <div class="picture">
-    <img
-      src="assets/pictures/buss.jpg"
-      alt="buss"
-      (click)="speak('buss')"
-      [ngClass]="{ 'focused-img': focusedElement === 'buss' }"
-    />
-    <audio id="buss" src="assets/voices/buss.m4a"></audio>
-  </div>
-  <div class="picture">
-    <img
-      src="assets/pictures/lekplats.jpg"
-      alt="lekplats"
-      (click)="speak('lekplats')"
-      [ngClass]="{ 'focused-img': focusedElement === 'lekplats' }"
-    />
-    <audio id="lekplats" src="assets/voices/lekplats.m4a"></audio>
-  </div>
-  <div class="picture">
-    <img
-      src="assets/pictures/vatten.jpg"
-      alt="vatten"
-      (click)="speak('vatten')"
-      [ngClass]="{ 'focused-img': focusedElement === 'vatten' }"
-    />
-    <audio id="vatten" src="assets/voices/vatten.m4a"></audio>
-  </div>
-  <div class="picture">
-    <img
-      src="assets/pictures/bil.jpg"
-      alt="vatten"
-      (click)="speak('bil')"
-      [ngClass]="{ 'focused-img': focusedElement === 'bil' }"
-    />
-    <audio id="bil" src="assets/voices/bil.m4a"></audio>
-  </div>
+    <li class="picture">
+      <img
+        src="assets/pictures/skog.jpg"
+        alt="skog"
+        (click)="speak('skog')"
+        [ngClass]="{ 'focused-img': focusedElement === 'skog' }"
+      />
+      <audio id="skog" src="assets/voices/skog.m4a"></audio>
+    </li>
+    <li class="picture">
+      <img
+        src="assets/pictures/buss.jpg"
+        alt="buss"
+        (click)="speak('buss')"
+        [ngClass]="{ 'focused-img': focusedElement === 'buss' }"
+      />
+      <audio id="buss" src="assets/voices/buss.m4a"></audio>
+    </li>
+    <li class="picture">
+      <img
+        src="assets/pictures/lekplats.jpg"
+        alt="lekplats"
+        (click)="speak('lekplats')"
+        [ngClass]="{ 'focused-img': focusedElement === 'lekplats' }"
+      />
+      <audio id="lekplats" src="assets/voices/lekplats.m4a"></audio>
+    </li>
+    <li class="picture">
+      <img
+        src="assets/pictures/vatten.jpg"
+        alt="vatten"
+        (click)="speak('vatten')"
+        [ngClass]="{ 'focused-img': focusedElement === 'vatten' }"
+      />
+      <audio id="vatten" src="assets/voices/vatten.m4a"></audio>
+    </li>
+    <li class="picture">
+      <img
+        src="assets/pictures/bil.jpg"
+        alt="vatten"
+        (click)="speak('bil')"
+        [ngClass]="{ 'focused-img': focusedElement === 'bil' }"
+      />
+      <audio id="bil" src="assets/voices/bil.m4a"></audio>
+    </li>
+  </ul>
 </div>
