@@ -6,14 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./picture.component.scss'],
 })
 export class PictureComponent implements OnInit {
+  public focusedElement: string = '';
   constructor() {}
 
   ngOnInit(): void {}
 
   public speak(word: string) {
+    this.focusedElement = '';
+
     const audioPlayer: HTMLAudioElement = document.querySelector(
       `#${word}`
     ) as HTMLAudioElement;
+
     switch (word) {
       case 'gunga':
         audioPlayer.play();
@@ -33,5 +37,8 @@ export class PictureComponent implements OnInit {
       case 'bil':
         audioPlayer.play();
     }
+    setTimeout(() => {
+      this.focusedElement = word;
+    }, 1);
   }
 }

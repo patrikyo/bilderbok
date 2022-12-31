@@ -10,11 +10,11 @@ img {
     overflow: hidden;
     height: 100%;
     width: 100%;
+    border-radius: 1%;
 
 }
 
-img:hover {
-    border: 2px solid #f1f1f14b;
+.focused-img {
     animation-name: scaleup;
     animation-duration: 3s;
 
@@ -22,8 +22,8 @@ img:hover {
 
 
 @keyframes scaleup {
-    from {scale: 1; border-radius: 5px;}
-    to {scale: 1.080; border-radius: 25px;}
+    from {scale: 1; border-radius: 1%;}
+    to {scale: 1.080; border-radius: 10%;}
   }
 
 .picture {

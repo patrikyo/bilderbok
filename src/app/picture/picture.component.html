@@ -1,16 +1,31 @@
 <div class="picture-container">
   <div class="picture">
-    <img src="assets/pictures/gunga.jpg" alt="image" (click)="speak('gunga')" />
+    <img
+      src="assets/pictures/gunga.jpg"
+      alt="image"
+      (click)="speak('gunga')"
+      [ngClass]="{ 'focused-img': focusedElement === 'gunga' }"
+    />
     <audio id="gunga" src="assets/voices/gunga.m4a"></audio>
   </div>
 
   <div class="picture">
-    <img src="assets/pictures/skog.jpg" alt="image" (click)="speak('skog')" />
+    <img
+      src="assets/pictures/skog.jpg"
+      alt="image"
+      (click)="speak('skog')"
+      [ngClass]="{ 'focused-img': focusedElement === 'skog' }"
+    />
     <audio id="skog" src="assets/voices/skog.m4a"></audio>
   </div>
 
   <div class="picture">
-    <img src="assets/pictures/buss.jpg" alt="image" (click)="speak('buss')" />
+    <img
+      src="assets/pictures/buss.jpg"
+      alt="image"
+      (click)="speak('buss')"
+      [ngClass]="{ 'focused-img': focusedElement === 'buss' }"
+    />
     <audio id="buss" src="assets/voices/buss.m4a"></audio>
   </div>
   <div class="picture">
@@ -18,6 +33,7 @@
       src="assets/pictures/lekplats.jpg"
       alt="image"
       (click)="speak('lekplats')"
+      [ngClass]="{ 'focused-img': focusedElement === 'lekplats' }"
     />
     <audio id="lekplats" src="assets/voices/lekplats.m4a"></audio>
   </div>
@@ -26,11 +42,17 @@
       src="assets/pictures/vatten.jpg"
       alt="image"
       (click)="speak('vatten')"
+      [ngClass]="{ 'focused-img': focusedElement === 'vatten' }"
     />
     <audio id="vatten" src="assets/voices/vatten.m4a"></audio>
   </div>
   <div class="picture">
-    <img src="assets/pictures/bil.jpg" alt="image" (click)="speak('bil')" />
+    <img
+      src="assets/pictures/bil.jpg"
+      alt="image"
+      (click)="speak('bil')"
+      [ngClass]="{ 'focused-img': focusedElement === 'bil' }"
+    />
     <audio id="bil" src="assets/voices/bil.m4a"></audio>
   </div>
 </div>
