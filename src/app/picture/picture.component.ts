@@ -45,6 +45,9 @@ export class PictureComponent implements OnInit {
         break;
       case 'parkbank':
         audioPlayer.play();
+        break;
+      case 'rutschkana':
+        audioPlayer.play();
     }
     setTimeout(() => {
       this.focusedElement = word;
