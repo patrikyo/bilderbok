@@ -36,6 +36,15 @@ export class PictureComponent implements OnInit {
         break;
       case 'bil':
         audioPlayer.play();
+        break;
+      case 'toalett':
+        audioPlayer.play();
+        break;
+      case 'hem':
+        audioPlayer.play();
+        break;
+      case 'parkbank':
+        audioPlayer.play();
     }
     setTimeout(() => {
       this.focusedElement = word;
